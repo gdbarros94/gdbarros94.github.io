@@ -1,1 +1,111 @@
-asfsafsdfsadfsdaf
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Barros - Full-Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Header -->
+    <header class="text-center py-10 bg-gray-800">
+        <h1 class="text-4xl font-bold">Sou Gabriel Barros</h1>
+        <p class="text-lg mt-2">Desenvolvedor Full-Stack e Professor</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="py-10 px-6 fade-in">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-4">Mais de 10 Anos de Experiência</h2>
+            <p class="text-lg">Profissional com ampla experiência em WordPress, PHP e Linux. Transformo problemas em soluções digitais eficientes.</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="py-10 px-6 bg-gray-800 fade-in">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-semibold text-center mb-4">Minha Experiência</h2>
+            <ul class="space-y-4">
+                <li class="border-b border-gray-700 pb-4">
+                    <h3 class="text-xl font-bold">SENAC RS (2023 - Presente)</h3>
+                    <p>Professor de tecnologia e informática básica.</p>
+                </li>
+                <li class="border-b border-gray-700 pb-4">
+                    <h3 class="text-xl font-bold">TMD Studio (2016 - Presente)</h3>
+                    <p>Desenvolvedor de soluções digitais e manutenção de servidores.</p>
+                </li>
+                <li class="border-b border-gray-700 pb-4">
+                    <h3 class="text-xl font-bold">3GM Agência (2019 - 2020)</h3>
+                    <p>Programador e gestor de TI.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="py-10 px-6 fade-in">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-semibold text-center mb-6">Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <img src="https://via.placeholder.com/150" alt="Project 1" class="rounded-lg shadow-md">
+                <img src="https://via.placeholder.com/150" alt="Project 2" class="rounded-lg shadow-md">
+                <img src="https://via.placeholder.com/150" alt="Project 3" class="rounded-lg shadow-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-10 px-6 bg-gray-800 fade-in">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">Serviços</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="p-4 bg-gray-700 rounded-lg">
+                    <h3 class="text-xl font-bold">WordPress</h3>
+                    <p>Criação de sites personalizados.</p>
+                </div>
+                <div class="p-4 bg-gray-700 rounded-lg">
+                    <h3 class="text-xl font-bold">Apps</h3>
+                    <p>Desenvolvimento de aplicativos.</p>
+                </div>
+                <div class="p-4 bg-gray-700 rounded-lg">
+                    <h3 class="text-xl font-bold">Web Apps</h3>
+                    <p>Aplicativos modernos e responsivos.</p>
+                </div>
+                <div class="p-4 bg-gray-700 rounded-lg">
+                    <h3 class="text-xl font-bold">Servidores</h3>
+                    <p>Manutenção e configuração.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer class="py-10 px-6 text-center fade-in">
+        <h2 class="text-3xl font-semibold mb-4">Me chama!</h2>
+        <p class="mb-2">contato@gdbarros.com.br</p>
+        <p>+55 51 991.929.898</p>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            $(".fade-in").each(function(i) {
+                setTimeout(() => {
+                    $(this).addClass("visible");
+                }, i * 300);
+            });
+        });
+    </script>
+</body>
+</html>
